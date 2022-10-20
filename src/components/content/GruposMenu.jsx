@@ -16,7 +16,7 @@ export default function GruposMenu(){
         <>
             <ListItemButton onClick={() =>Changeview('/david-diaz/grupos')}>
                         <ListItemIcon>
-                            <ExitToAppIcon />
+                            <ExitToAppIcon fontSize='large'  />
                         </ListItemIcon>
                         <ListItemText primary="Grupos" />
             </ListItemButton>

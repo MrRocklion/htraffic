@@ -16,7 +16,7 @@ export default function SyncMenu(){
         <>
             <ListItemButton onClick={() =>Changeview('/david-diaz/synct')}>
                         <ListItemIcon>
-                            <ExitToAppIcon />
+                            <ExitToAppIcon fontSize='large' />
                         </ListItemIcon>
                         <ListItemText primary="Sincronizar Tiempos" />
             </ListItemButton>

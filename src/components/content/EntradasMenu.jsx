@@ -16,7 +16,7 @@ export default function EntradasMenu(){
         <>
             <ListItemButton onClick={() =>Changeview('/david-diaz/entradas')}>
                         <ListItemIcon>
-                            <AutoStoriesIcon/>
+                            <AutoStoriesIcon fontSize='large'  />
                         </ListItemIcon>
                         <ListItemText primary="Entradas" />
             </ListItemButton>

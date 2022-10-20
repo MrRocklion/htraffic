@@ -13,7 +13,7 @@ export default function PlanesMenu(){
         <>
             <ListItemButton onClick={() =>Changeview('/david-diaz/planes')}>
                         <ListItemIcon>
-                            <LibraryAddIcon />
+                            <LibraryAddIcon  fontSize='large'/>
                         </ListItemIcon>
                         <ListItemText primary="Planes"/>
             </ListItemButton>

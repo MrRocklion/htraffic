@@ -2,23 +2,23 @@ import React  from 'react';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import HomeIcon from '@mui/icons-material/Home';
 import { useNavigate } from 'react-router-dom';
 
 
 
-export default function HorariosMenu(){
+export default function HomeMenu(){
     const navigate = useNavigate();
     const Changeview = (referencia) => {
         navigate(referencia);
     }
     return(
         <>
-            <ListItemButton onClick={() =>Changeview('/david-diaz/horarios')}>
+            <ListItemButton onClick={() =>Changeview('/david-diaz/home')}>
                         <ListItemIcon>
-                            <AccessTimeIcon fontSize='large'  />
+                            <HomeIcon fontSize='large'  />
                         </ListItemIcon>
-                        <ListItemText primary="Horarios" />
+                        <ListItemText primary="Home" />
             </ListItemButton>
         </>
     )

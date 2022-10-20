@@ -17,7 +17,7 @@ export default function ResumenMenu(){
         <>
             <ListItemButton onClick={() =>Changeview('/david-diaz/resumen')}>
                         <ListItemIcon>
-                            <DescriptionIcon/>
+                            <DescriptionIcon fontSize='large' />
                         </ListItemIcon>
                         <ListItemText primary="Resumen" />
             </ListItemButton>

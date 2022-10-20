@@ -16,7 +16,7 @@ export default function SettingsMenu(){
         <>
             <ListItemButton onClick={() =>Changeview('/david-diaz/ajustes')}>
                         <ListItemIcon>
-                            <ExitToAppIcon />
+                            <ExitToAppIcon fontSize='large' />
                         </ListItemIcon>
                         <ListItemText primary="Ajustes" />
             </ListItemButton>

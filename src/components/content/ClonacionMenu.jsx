@@ -2,9 +2,8 @@ import React  from 'react';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import EnhancedEncryptionIcon from '@mui/icons-material/EnhancedEncryption';
-import EngineeringIcon from '@mui/icons-material/Engineering';
+import RouterIcon from '@mui/icons-material/Router';
+
 import { useNavigate } from 'react-router-dom';
 
 
@@ -18,7 +17,7 @@ export default function ClonacionMenu(){
         <>
             <ListItemButton onClick={() =>Changeview('/david-diaz/clonacion')}>
                         <ListItemIcon>
-                            <EnhancedEncryptionIcon />
+                            <RouterIcon fontSize='large' />
                         </ListItemIcon>
                         <ListItemText primary="Clonación De Equipos" />
             </ListItemButton>

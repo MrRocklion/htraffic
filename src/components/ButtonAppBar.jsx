@@ -18,6 +18,8 @@ import PlanesMenu from '../components/content/PlanesMenu';
 import RegistroErrores from '../components/content/RegistroErrores';
 import ResumenMenu from '../components/content/ResumenMenu';
 import SalirMenu from '../components/content/SalirMenu';
+import HomeMenu from './content/HomeMenu';
+
 export default function ButtonAppBar() {
 
   const [state, setState] = React.useState({
@@ -27,6 +29,11 @@ export default function ButtonAppBar() {
 
 
 const menuData = [
+  {
+    child: <HomeMenu/>,
+    visibility: true,
+    key: 0
+},
   {
       child: <ClonacionMenu/>,
       visibility: true,
@@ -93,8 +100,10 @@ const list = (anchor) => (
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="static" sx={{backgroundColor: "#34495E"}}>
+      
         <Toolbar>
+          
           <IconButton
             size="large"
             edge="start"
@@ -123,7 +132,7 @@ const list = (anchor) => (
                     aria-labelledby="nested-list-subheader"
                     subheader={
                         <ListSubheader component="div" id="nested-list-subheader">
-                          Opciones Configuracion
+                          <h3>PANEL DE OPCIONES</h3> 
                         </ListSubheader>
                     }
                 >
