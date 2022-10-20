@@ -9,6 +9,7 @@ import TextField from '@mui/material/TextField';
 import { db } from "../firebase/firebase-config";
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 import UpdateIcon from '@mui/icons-material/Update';
+import CustomMap from "../components/CustomMap";
 import "../css/HomeView.css"
 export default function HomeView() {
     const [controladres, setControladores] = useState([]);
@@ -83,6 +84,11 @@ export default function HomeView() {
                 </Grid>
                 <Grid item md={4}  >
                 <Button variant="contained" startIcon={<UpdateIcon />} fullWidth sx={{height: "100%",backgroundColor:"#52BE80"}}>ACTUALIZAR</Button>
+                </Grid>
+                <Grid item md={12}>
+                    <div className="container-map">
+                        <CustomMap/>
+                    </div>
                 </Grid>
                 </Grid>
             </Container>
