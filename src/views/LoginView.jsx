@@ -39,7 +39,7 @@ export default function LoginView() {
       email: data.get('email'),
       password: data.get('password'),
     });
-    navigate("/home")
+    navigate("/david-diaz/home")
   };
 
   return (

@@ -2,22 +2,23 @@ import React  from 'react';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import { useNavigate } from 'react-router-dom';
-import LayersIcon from '@mui/icons-material/Layers';
 
 
-export default function FasesMenu(){
+
+export default function SalirMenu(){
     const navigate = useNavigate();
     const Changeview = (referencia) => {
         navigate(referencia);
     }
     return(
         <>
-            <ListItemButton onClick={() =>Changeview('/david-diaz/fases')}>
+            <ListItemButton onClick={() =>Changeview('/')}>
                         <ListItemIcon>
-                            <LayersIcon />
+                            <ExitToAppIcon />
                         </ListItemIcon>
-                        <ListItemText primary="Fases" />
+                        <ListItemText primary="Salir" />
             </ListItemButton>
         </>
     )

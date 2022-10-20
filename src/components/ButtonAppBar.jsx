@@ -6,31 +6,68 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import { useNavigate } from 'react-router-dom';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListSubheader from '@mui/material/ListSubheader';
-import { useParams } from "react-router-dom";
 import Drawer from '@mui/material/Drawer';
+import ClonacionMenu  from '../components/content/ClonacionMenu';
+import EntradasMenu  from '../components/content/EntradasMenu';
+import FasesMenu from '../components/content/FasesMenu';
+import HorariosMenu from '../components/content/HorariosMenu';
+import PlanesMenu from '../components/content/PlanesMenu';
+import RegistroErrores from '../components/content/RegistroErrores';
+import ResumenMenu from '../components/content/ResumenMenu';
+import SalirMenu from '../components/content/SalirMenu';
 export default function ButtonAppBar() {
 
-  let params = useParams();
-  const [anchorEl, setAnchorEl] = React.useState(null);
   const [state, setState] = React.useState({
       left: false,
   });
-  const navigate = useNavigate();
 
-  const Changeview = (referencia) => {
-    navigate(referencia);
-}
 
+
+const menuData = [
+  {
+      child: <ClonacionMenu/>,
+      visibility: true,
+      key: 1
+  },
+  {
+    child: <EntradasMenu/>,
+    visibility: true,
+    key: 2
+},
+  {
+    child: <FasesMenu/>,
+    visibility: true,
+    key: 3
+  },
+  {
+    child: <HorariosMenu/>,
+    visibility: true,
+    key: 4
+  },
+  {
+    child: <PlanesMenu/>,
+    visibility: true,
+    key: 5
+  },
+  {
+    child: <RegistroErrores/>,
+    visibility: true,
+    key: 6
+  },
+  {
+    child: <ResumenMenu/>,
+    visibility: true,
+    key: 7
+  },
+  {
+    child: <SalirMenu/>,
+    visibility: true,
+    key: 8
+  },
+]
 
 // funcion para hacer funcionar el drawer
 const toggleDrawer = (anchor, open) => (event) => {
@@ -40,14 +77,7 @@ const toggleDrawer = (anchor, open) => (event) => {
 
     setState({ ...state, [anchor]: open });
 };
-//menu
-const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
-};
 
-const handleClose = () => {
-    setAnchorEl(null);
-};
 //drawer a mostrar
 const list = (anchor) => (
     <Box
@@ -57,6 +87,7 @@ const list = (anchor) => (
         onKeyDown={toggleDrawer(anchor, false)}
     >
         <Divider />
+        
     </Box>
 );
 
@@ -96,17 +127,13 @@ const list = (anchor) => (
                         </ListSubheader>
                     }
                 >
-                    {/* {menuData.filter(item => item.visibility).map((item, index) => (
-
+                    {menuData.filter(item => item.visibility).map((item, index) => (
                         <div key={index}>
                             {item.child}
                         </div>
 
-
-
-
                     ))
-                    } */}
+                    }
                 </List>
             </Drawer>
     </>
