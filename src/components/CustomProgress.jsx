@@ -21,7 +21,7 @@ export default function CustomProgress({red,yellow,green}) {
         calculatePorcentajes();
     },[])
     return (
-        <>
+        <div>
             <div className='bar-container'>
                 <div className="b-red" style={{width:`${procentRed}%`}}>
                     {red}
@@ -35,6 +35,6 @@ export default function CustomProgress({red,yellow,green}) {
                 </div>
 
             </div>
-        </>
+        </div>
     );
 }

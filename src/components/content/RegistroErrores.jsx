@@ -13,14 +13,14 @@ export default function RegistroErrores(){
         navigate(referencia);
     }
     return(
-        <>
+        <div>
             <ListItemButton onClick={() =>Changeview('/david-diaz/errores')}>
                             <ListItemIcon>
                                 <SdCardAlertIcon fontSize='large' />
                             </ListItemIcon>
                         <ListItemText primary="Registro de Errores" />
             </ListItemButton>
-        </>
+        </div>
     )
 
 

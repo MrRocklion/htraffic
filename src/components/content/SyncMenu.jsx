@@ -13,14 +13,14 @@ export default function SyncMenu(){
         navigate(referencia);
     }
     return(
-        <>
+        <div>
             <ListItemButton onClick={() =>Changeview('/david-diaz/synct')}>
                         <ListItemIcon>
                             <ExitToAppIcon fontSize='large' />
                         </ListItemIcon>
                         <ListItemText primary="Sincronizar Tiempos" />
             </ListItemButton>
-        </>
+        </div>
     )
 
 

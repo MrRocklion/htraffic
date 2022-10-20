@@ -73,7 +73,7 @@ export default function HomeView() {
         getData();
     }, [])
     return (
-        <>
+        <div>
             <Container maxWidth="md">
                 <h2>Lista De Controladores</h2>
                 <Button variant="contained" endIcon={<CloudDownloadIcon />} sx={{ marginBottom: 2 }}>
@@ -170,7 +170,7 @@ export default function HomeView() {
                     </Grid>
                 </Grid>
             </Container>
-        </>
+        </div>
     );
 
 }

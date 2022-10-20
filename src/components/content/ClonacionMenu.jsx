@@ -14,14 +14,14 @@ export default function ClonacionMenu(){
         navigate(referencia);
     }
     return(
-        <>
+        <div>
             <ListItemButton onClick={() =>Changeview('/david-diaz/clonacion')}>
                         <ListItemIcon>
                             <RouterIcon fontSize='large' />
                         </ListItemIcon>
                         <ListItemText primary="Clonación De Equipos" />
             </ListItemButton>
-        </>
+        </div>
     )
 
 

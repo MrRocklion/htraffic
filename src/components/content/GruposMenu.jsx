@@ -13,14 +13,14 @@ export default function GruposMenu(){
         navigate(referencia);
     }
     return(
-        <>
+        <div>
             <ListItemButton onClick={() =>Changeview('/david-diaz/grupos')}>
                         <ListItemIcon>
                             <ExitToAppIcon fontSize='large'  />
                         </ListItemIcon>
                         <ListItemText primary="Grupos" />
             </ListItemButton>
-        </>
+        </div>
     )
 
 

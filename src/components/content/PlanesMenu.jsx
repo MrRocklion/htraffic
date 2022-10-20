@@ -10,14 +10,14 @@ export default function PlanesMenu(){
         navigate(referencia);
     }
     return(
-        <>
+        <div>
             <ListItemButton onClick={() =>Changeview('/david-diaz/planes')}>
                         <ListItemIcon>
                             <LibraryAddIcon  fontSize='large'/>
                         </ListItemIcon>
                         <ListItemText primary="Planes"/>
             </ListItemButton>
-        </>
+        </div>
     )
 
 

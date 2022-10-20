@@ -13,14 +13,14 @@ export default function HorariosMenu(){
         navigate(referencia);
     }
     return(
-        <>
+        <div>
             <ListItemButton onClick={() =>Changeview('/david-diaz/horarios')}>
                         <ListItemIcon>
                             <AccessTimeIcon fontSize='large'  />
                         </ListItemIcon>
                         <ListItemText primary="Horarios" />
             </ListItemButton>
-        </>
+        </div>
     )
 
 

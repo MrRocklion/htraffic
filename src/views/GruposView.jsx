@@ -1,6 +1,6 @@
 export default function GruposView(){
-    return(<>
+    return(<div>
         <h1>Grupos View</h1>    
     
-    </>);
+    </div>);
 }

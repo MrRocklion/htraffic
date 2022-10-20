@@ -1,3 +1,4 @@
+import React  from 'react';
 import { Routes, Route } from "react-router-dom";
 import ButtonAppBar from "../components/ButtonAppBar";
 import ClonacionView from "./ClonacionView";
@@ -12,7 +13,8 @@ import ErroresView from "./Errores.View";
 export default function MultiView(){
 
 return(
-    <>
+    <div>
+    
     <ButtonAppBar/>
         <Routes>
                 <Route path="home" element={<HomeView/>} />
@@ -25,6 +27,6 @@ return(
                 <Route path="errores" element={<ErroresView />}/>
                 <Route path="grupos" element={<GruposView />}/>
         </Routes>
-    </>
+    </div>
 );
 }

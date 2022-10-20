@@ -13,14 +13,14 @@ export default function HomeMenu(){
         navigate(referencia);
     }
     return(
-        <>
+        <div>
             <ListItemButton onClick={() =>Changeview('/david-diaz/home')}>
                         <ListItemIcon>
                             <HomeIcon fontSize='large'  />
                         </ListItemIcon>
                         <ListItemText primary="Home" />
             </ListItemButton>
-        </>
+        </div>
     )
 
 

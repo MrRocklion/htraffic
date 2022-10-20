@@ -13,14 +13,14 @@ export default function EntradasMenu(){
         navigate(referencia);
     }
     return(
-        <>
+        <div>
             <ListItemButton onClick={() =>Changeview('/david-diaz/entradas')}>
                         <ListItemIcon>
                             <AutoStoriesIcon fontSize='large'  />
                         </ListItemIcon>
                         <ListItemText primary="Entradas" />
             </ListItemButton>
-        </>
+        </div>
     )
 
 

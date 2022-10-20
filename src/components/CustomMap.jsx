@@ -20,7 +20,7 @@ export default function CustomMap(){
     // });
 
     return(
-        <>
+        <div>
         
       <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
         <TileLayer
@@ -33,7 +33,7 @@ export default function CustomMap(){
           </Popup>
         </Marker>
       </MapContainer>,
-        </>
+        </div>
     );
   
 }

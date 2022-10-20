@@ -13,14 +13,14 @@ export default function SettingsMenu(){
         navigate(referencia);
     }
     return(
-        <>
+        <div>
             <ListItemButton onClick={() =>Changeview('/david-diaz/ajustes')}>
                         <ListItemIcon>
                             <ExitToAppIcon fontSize='large' />
                         </ListItemIcon>
                         <ListItemText primary="Ajustes" />
             </ListItemButton>
-        </>
+        </div>
     )
 
 

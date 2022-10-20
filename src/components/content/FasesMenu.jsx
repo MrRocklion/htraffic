@@ -12,14 +12,14 @@ export default function FasesMenu(){
         navigate(referencia);
     }
     return(
-        <>
+        <div>
             <ListItemButton onClick={() =>Changeview('/david-diaz/fases')}>
                         <ListItemIcon>
                             <LayersIcon fontSize='large'  />
                         </ListItemIcon>
                         <ListItemText primary="Fases" />
             </ListItemButton>
-        </>
+        </div>
     )
 
 

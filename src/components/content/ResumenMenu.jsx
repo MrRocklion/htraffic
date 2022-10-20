@@ -14,14 +14,14 @@ export default function ResumenMenu(){
         navigate(referencia);
     }
     return(
-        <>
+        <div>
             <ListItemButton onClick={() =>Changeview('/david-diaz/resumen')}>
                         <ListItemIcon>
                             <DescriptionIcon fontSize='large' />
                         </ListItemIcon>
                         <ListItemText primary="Resumen" />
             </ListItemButton>
-        </>
+        </div>
     )
 
 

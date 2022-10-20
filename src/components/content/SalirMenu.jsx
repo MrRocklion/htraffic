@@ -13,14 +13,14 @@ export default function SalirMenu(){
         navigate(referencia);
     }
     return(
-        <>
+        <div>
             <ListItemButton onClick={() =>Changeview('/')}>
                         <ListItemIcon>
                             <ExitToAppIcon fontSize='large' />
                         </ListItemIcon>
                         <ListItemText primary="Salir" />
             </ListItemButton>
-        </>
+        </div>
     )
 
 

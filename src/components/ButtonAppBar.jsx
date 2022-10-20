@@ -99,7 +99,7 @@ const list = (anchor) => (
 );
 
   return (
-    <>
+    <div>
       <AppBar position="static" sx={{backgroundColor: "#34495E"}}>
       
         <Toolbar>
@@ -145,7 +145,7 @@ const list = (anchor) => (
                     }
                 </List>
             </Drawer>
-    </>
+    </div>
 
   );
 }
