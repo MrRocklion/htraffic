@@ -11,6 +11,47 @@ import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 import UpdateIcon from '@mui/icons-material/Update';
 import CustomMap from "../components/CustomMap";
 import "../css/HomeView.css"
+import CustomProgress from "../components/CustomProgress";
+
+const semaforos = [
+    {
+        nombre: "semaforo de las americas",
+        lat: "-23.12312",
+        lng: "-34.2321421",
+        rojo: 15,
+        amarillo:2,
+        verde:50,
+        fase: 1,
+    },
+    {
+        nombre: "semaforo de las shiris",
+        lat: "-23.12312",
+        lng: "-8.2321421",
+        rojo: 15,
+        amarillo:2,
+        verde:10,
+        fase: 1,
+    },
+    {
+        nombre: "semaforo de pumapugo",
+        lat: "-23.12312",
+        lng: "-21.2321421",
+        rojo: 40,
+        amarillo:2,
+        verde:30,
+        fase: 5,
+    },
+    {
+        nombre: "semaforo mariscal lamar",
+        lat: "-2.12312",
+        lng: "-1.2321421",
+        rojo: 10,
+        amarillo:2,
+        verde:30,
+        fase: 3,
+    }
+]
+
 export default function HomeView() {
     const [controladres, setControladores] = useState([]);
     const getData = () => {
@@ -90,6 +131,43 @@ export default function HomeView() {
                         <CustomMap/>
                     </div>
                 </Grid>
+                    <Grid item xs={12}>
+                        <Table className='home-t'>
+                            <Thead>
+                                <Tr>
+                                    <Th className='home-t-th'>#</Th>
+                                    <Th className='home-t-th'>Semaforo</Th>
+                                    <Th className='home-t-th'>Indicador en Segundos</Th>
+                                    <Th className='home-t-th'>Editar</Th>
+                                </Tr>
+                            </Thead>
+                            <Tbody>
+                                {semaforos.map((dato, index) => (
+                                    <Tr key={index} >
+                                        <Td>
+                                            {index + 1}
+                                        </Td>
+                                        <Td >
+                                        {dato.nombre}
+                                        </Td>
+                                        <Td >
+                                        <CustomProgress   red={dato.rojo} yellow={dato.amarillo} green={dato.verde} />
+                                        </Td>
+                                       
+                                        <Td >
+                                        <Button variant="contained" sx={{backgroundColor:"#F0B27A",marginLeft:2}}>EDITAR</Button>
+                                        </Td>
+                                
+                                    </Tr>
+                                ))}
+                            </Tbody>
+                        </Table>
+                    </Grid>
+                    <Grid item xs={12}>
+                    <div className="home-view-footer">
+                                 asd
+                    </div>
+                    </Grid>
                 </Grid>
             </Container>
         </>

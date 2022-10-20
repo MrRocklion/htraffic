@@ -13,10 +13,9 @@ export default function MultiView(){
 
 return(
     <>
-    
     <ButtonAppBar/>
         <Routes>
-        <Route path="home" element={<HomeView/>}/>
+                <Route path="home" element={<HomeView/>} />
                 <Route path="clonacion" element={<ClonacionView />}/>
                 <Route path="resumen" element={<ResumenView />}/>
                 <Route path="entradas" element={<EntradasView />}/>
